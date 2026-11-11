@@ -1,0 +1,1303 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Kellen Santos | Estética Avançada & Depilação a Laser - Ananindeua PA</title>
+    <meta name="description" content="Clínica boutique de estética avançada e depilação em Ananindeua. Harmonização facial, bioestimuladores de colágeno, botox e tratamentos personalizados com excelência e naturalidade." />
+    
+    <!-- CDNs Públicos de Alta Performance -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+    
+    <!-- Google Fonts: Inter (Design System V15) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    
+    <!-- Estilos Customizados & Design System Adaptado -->
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body class="selection:bg-[#E5C158] selection:text-black bg-[#08080A] text-white">
+
+    <!-- Textura Sutil Orgânica / Noise Overlay do Design System -->
+    <div class="noise-overlay" aria-hidden="true"></div>
+
+    <!-- ==========================================
+         NAVBAR / HEADER FLUTUANTE
+         ========================================== -->
+    <header class="glass-panel nav-load sticky top-0 z-[80] w-full border-b border-[#E5C158]/20 transition-all duration-300">
+        <div class="max-w-[1440px] mx-auto px-6 md:px-12 py-4 md:py-5 flex items-center justify-between">
+            
+            <!-- Left Navigation (Desktop) -->
+            <nav class="hidden lg:flex items-center gap-8">
+                <a class="text-[0.68rem] font-bold font-mono tracking-[0.2em] uppercase text-stone-400 hover:text-[#E5C158] transition-colors" href="#sobre">Sobre Nós</a>
+                <a class="text-[0.68rem] font-bold font-mono tracking-[0.2em] uppercase text-stone-400 hover:text-[#E5C158] transition-colors" href="#procedimentos">Procedimentos</a>
+                <a class="text-[0.68rem] font-bold font-mono tracking-[0.2em] uppercase text-stone-400 hover:text-[#E5C158] transition-colors" href="#quiz">Protocolo Ideal</a>
+            </nav>
+
+            <!-- Center Brand Logo -->
+            <a href="#" class="flex items-center gap-3 group transition-transform duration-300 hover:scale-[1.02]" aria-label="Kellen Santos Estética Avançada">
+                <img src="assets/logo.png" alt="Logo Kellen Santos" class="h-10 md:h-12 w-auto object-contain filter drop-shadow-[0_2px_12px_rgba(229,193,88,0.25)]" />
+            </a>
+
+            <!-- Right Navigation & CTA (Desktop) -->
+            <div class="hidden lg:flex items-center gap-8">
+                <a class="text-[0.68rem] font-bold font-mono tracking-[0.2em] uppercase text-stone-400 hover:text-[#E5C158] transition-colors" href="#espaco">O Espaço</a>
+                <a class="text-[0.68rem] font-bold font-mono tracking-[0.2em] uppercase text-stone-400 hover:text-[#E5C158] transition-colors" href="#depoimentos">Depoimentos</a>
+                <a class="text-[0.68rem] font-bold font-mono tracking-[0.2em] uppercase text-stone-400 hover:text-[#E5C158] transition-colors" href="#contato">Localização</a>
+                
+                <a href="https://wa.me/559181450800?text=Ol%C3%A1%2C+gostaria+de+agendar+uma+avalia%C3%A7%C3%A3o+exclusiva+na+Kellen+Santos+Est%C3%A9tica+Avan%C3%A7ada." 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="btn-gold-shimmer px-6 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider flex items-center gap-2">
+                    <iconify-icon icon="solar:calendar-bold" class="text-base"></iconify-icon>
+                    <span>Agendar Consulta</span>
+                </a>
+            </div>
+
+            <!-- Mobile Hamburger Button -->
+            <button id="mobile-menu-btn" class="lg:hidden p-2 text-[#E5C158] hover:text-white transition-colors" aria-label="Abrir Menu">
+                <iconify-icon icon="solar:hamburger-menu-linear" class="text-2xl"></iconify-icon>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-drawer" class="fixed inset-0 z-[100] bg-black/95 backdrop-blur-2xl opacity-0 pointer-events-none transition-all duration-400 flex flex-col justify-between p-8">
+        <div class="flex items-center justify-between border-b border-white/10 pb-6">
+            <img src="assets/logo.png" alt="Logo Kellen Santos" class="h-10 w-auto object-contain" />
+            <button id="mobile-close-btn" class="p-2 text-stone-400 hover:text-[#E5C158] transition-colors" aria-label="Fechar Menu">
+                <iconify-icon icon="solar:close-circle-linear" class="text-3xl"></iconify-icon>
+            </button>
+        </div>
+
+        <nav class="flex flex-col gap-6 py-8">
+            <a href="#sobre" class="mobile-nav-link text-2xl font-bold tracking-tight text-white hover:text-[#E5C158] transition-colors">Sobre Nós</a>
+            <a href="#procedimentos" class="mobile-nav-link text-2xl font-bold tracking-tight text-white hover:text-[#E5C158] transition-colors">Procedimentos</a>
+            <a href="#quiz" class="mobile-nav-link text-2xl font-bold tracking-tight text-white hover:text-[#E5C158] transition-colors">Descubra Seu Protocolo</a>
+            <a href="#espaco" class="mobile-nav-link text-2xl font-bold tracking-tight text-white hover:text-[#E5C158] transition-colors">Nosso Espaço</a>
+            <a href="#depoimentos" class="mobile-nav-link text-2xl font-bold tracking-tight text-white hover:text-[#E5C158] transition-colors">Depoimentos</a>
+            <a href="#contato" class="mobile-nav-link text-2xl font-bold tracking-tight text-white hover:text-[#E5C158] transition-colors">Localização & Contato</a>
+        </nav>
+
+        <div class="border-t border-white/10 pt-6 space-y-4">
+            <div class="text-xs text-stone-400 font-mono">
+                <p class="text-[#E5C158] font-bold mb-1">ANANINDEUA - PA</p>
+                <p>Tv Fé em Deus, Av. Gov. Hélio Gueiros, QD 208 - Coqueiro</p>
+                <p class="mt-1">+55 91 8145-0800</p>
+            </div>
+            <a href="https://wa.me/559181450800?text=Ol%C3%A1%2C+gostaria+de+agendar+uma+avalia%C3%A7%C3%A3o+exclusiva+na+Kellen+Santos+Est%C3%A9tica+Avan%C3%A7ada." 
+               target="_blank" 
+               class="btn-gold-shimmer w-full py-4 rounded-2xl text-center font-bold text-sm block">
+                Agendar via WhatsApp
+            </a>
+        </div>
+    </div>
+
+    <!-- ==========================================
+         HERO SECTION: INSPIRADA NA REFERÊNCIA 2
+         Estética minimalista, mulher em perfil, iluminação recortada dourada,
+         fundo escuro puro (#000000/#121212) e detalhes tipográficos elegantes.
+         ========================================== -->
+    <section class="hero-wrapper flashlight-zone relative border-b border-[#E5C158]/15" id="hero">
+        
+        <!-- Imagem de Fundo Gerada da Mulher em Perfil -->
+        <img src="assets/hero-woman.jpg" 
+             alt="Kellen Santos Estética Avançada - Perfil Sereno e Minimalista" 
+             class="hero-background-image parallax-img" 
+             data-speed="0.03" />
+
+        <!-- Máscaras e Gradientes Cinematográficos de Fundo -->
+        <div class="hero-gradient-overlay"></div>
+
+        <!-- Conteúdo Principal da Hero -->
+        <div class="relative z-10 w-full max-w-[1440px] mx-auto px-6 md:px-12 py-12 md:py-24 my-auto">
+            <div class="max-w-2xl lg:max-w-3xl">
+                
+                <!-- Título Hero com Text Reveal do Design System -->
+                <h1 class="text-4xl sm:text-6xl md:text-7xl lg:text-[5.2rem] font-extrabold tracking-tighter leading-[0.94] text-white mb-8" id="hero-title">
+                    <span class="text-reveal-wrapper"><span class="text-reveal-content delay-100">A harmonia perfeita</span></span><br/>
+                    <span class="text-reveal-wrapper"><span class="text-reveal-content delay-200">entre anatomia, ciência</span></span><br/>
+                    <span class="text-reveal-wrapper"><span class="text-reveal-content delay-300 text-transparent bg-clip-text bg-gradient-to-r from-[#FFF1B5] via-[#E5C158] to-[#D4AF37]">e sua beleza única.</span></span>
+                </h1>
+
+                <!-- Subtítulo refinado -->
+                <p class="text-base sm:text-lg md:text-xl text-stone-300 font-light leading-relaxed max-w-xl mb-10 reveal active delay-400">
+                    Tratamentos faciais e corporais individualizados com tecnologia padrão ouro. Resultados autênticos e sofisticados, desenhados para valorizar a sua melhor versão.
+                </p>
+
+                <!-- Call To Action Pílula (Inspirado no botão da Ref 2 "• START YOUR JOURNEY") -->
+                <div class="flex flex-wrap items-center gap-6 reveal active delay-500">
+                    <a href="https://wa.me/559181450800?text=Ol%C3%A1%2C+gostaria+de+agendar+minha+avalia%C3%A7%C3%A3o+exclusiva+na+Kellen+Santos." 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       class="pill-hero-cta btn-shimmer group">
+                        <span class="pulsing-dot"></span>
+                        <span>Agendar Avaliação Exclusiva</span>
+                        <iconify-icon icon="solar:arrow-right-linear" class="text-lg group-hover:translate-x-1.5 transition-transform"></iconify-icon>
+                    </a>
+
+                    <a href="#procedimentos" 
+                       class="inline-flex items-center gap-2 text-xs font-mono tracking-[0.2em] uppercase text-stone-400 hover:text-[#E5C158] transition-colors py-3 group">
+                        <span>Ver Procedimentos</span>
+                        <iconify-icon icon="solar:arrow-down-linear" class="text-base group-hover:translate-y-1 transition-transform"></iconify-icon>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Rodapé da Hero: Scroll To Explore (Esquerda) -->
+        <div class="relative z-10 w-full max-w-[1440px] mx-auto px-6 md:px-12 pb-10 flex items-center">
+            
+            <!-- Canto Inferior Esquerdo: Indicador de Scroll -->
+            <a href="#marquee-section" class="flex items-center gap-3 text-stone-400 hover:text-[#E5C158] transition-colors group cursor-pointer">
+                <span class="text-[0.65rem] font-mono font-bold tracking-[0.25em] uppercase">Scroll to explore</span>
+                <iconify-icon icon="solar:arrow-down-linear" class="text-base text-[#E5C158] scroll-bounce"></iconify-icon>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- ==========================================
+         INFINITE MARQUEE / TICKER SYSTEM (Design System V15)
+         ========================================== -->
+    <div id="marquee-section" class="marquee-container" aria-label="Diferenciais da Clínica">
+        <div class="marquee-content gap-12">
+            <span class="text-[0.7rem] font-bold font-mono uppercase tracking-[0.25em] text-[#E5C158]">Harmonização Facial de Alta Precisão</span>
+            <span class="text-stone-700">●</span>
+            <span class="text-[0.7rem] font-bold font-mono uppercase tracking-[0.25em] text-stone-300">Bioestimuladores de Colágeno</span>
+            <span class="text-stone-700">●</span>
+            <span class="text-[0.7rem] font-bold font-mono uppercase tracking-[0.25em] text-[#E5C158]">Depilação a Laser Indolor</span>
+            <span class="text-stone-700">●</span>
+            <span class="text-[0.7rem] font-bold font-mono uppercase tracking-[0.25em] text-stone-300">Toxina Botulínica Preventiva</span>
+            <span class="text-stone-700">●</span>
+            <span class="text-[0.7rem] font-bold font-mono uppercase tracking-[0.25em] text-[#E5C158]">Produtos Homologados ANVISA & FDA</span>
+            <span class="text-stone-700">●</span>
+            <span class="text-[0.7rem] font-bold font-mono uppercase tracking-[0.25em] text-stone-300">Atendimento 100% Personalizado</span>
+            <span class="text-stone-700">●</span>
+            <span class="text-[0.7rem] font-bold font-mono uppercase tracking-[0.25em] text-[#E5C158]">Ananindeua - Pará</span>
+            <span class="text-stone-700">●</span>
+        </div>
+        <!-- Loop Seamless -->
+        <div class="marquee-content gap-12" aria-hidden="true">
+            <span class="text-[0.7rem] font-bold font-mono uppercase tracking-[0.25em] text-[#E5C158]">Harmonização Facial de Alta Precisão</span>
+            <span class="text-stone-700">●</span>
+            <span class="text-[0.7rem] font-bold font-mono uppercase tracking-[0.25em] text-stone-300">Bioestimuladores de Colágeno</span>
+            <span class="text-stone-700">●</span>
+            <span class="text-[0.7rem] font-bold font-mono uppercase tracking-[0.25em] text-[#E5C158]">Depilação a Laser Indolor</span>
+            <span class="text-stone-700">●</span>
+            <span class="text-[0.7rem] font-bold font-mono uppercase tracking-[0.25em] text-stone-300">Toxina Botulínica Preventiva</span>
+            <span class="text-stone-700">●</span>
+            <span class="text-[0.7rem] font-bold font-mono uppercase tracking-[0.25em] text-[#E5C158]">Produtos Homologados ANVISA & FDA</span>
+            <span class="text-stone-700">●</span>
+            <span class="text-[0.7rem] font-bold font-mono uppercase tracking-[0.25em] text-stone-300">Atendimento 100% Personalizado</span>
+            <span class="text-stone-700">●</span>
+            <span class="text-[0.7rem] font-bold font-mono uppercase tracking-[0.25em] text-[#E5C158]">Ananindeua - Pará</span>
+            <span class="text-stone-700">●</span>
+        </div>
+    </div>
+
+    <!-- ==========================================
+         PAINEL DE MÉTRICAS & CREDIBILIDADE (Design System V15)
+         ========================================== -->
+    <section class="py-20 md:py-28 bg-[#0B0B0E] border-b border-white/5 relative overflow-hidden">
+        <div class="max-w-[1440px] mx-auto px-6 md:px-12 relative z-10">
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Stat 1 -->
+                <div class="counter-box bg-[#121216] border border-white/5 hover:border-[#E5C158]/40 p-8 rounded-[1.75rem] transition-all duration-400 group hover:-translate-y-2 glow-hover" data-target="5200">
+                    <div class="flex justify-between items-start mb-6">
+                        <iconify-icon icon="solar:star-shine-bold-duotone" class="text-3xl text-[#E5C158] group-hover:scale-110 transition-transform duration-300"></iconify-icon>
+                        <span class="text-[0.62rem] font-mono tracking-widest uppercase text-stone-500">EXPERIÊNCIA</span>
+                    </div>
+                    <div class="text-4xl md:text-5xl font-extrabold text-white tracking-tight mb-2">
+                        +<span class="counter-number">0</span>
+                    </div>
+                    <p class="text-xs text-stone-400 font-medium leading-relaxed">
+                        Procedimentos realizados com foco absoluto em elegância e naturalidade.
+                    </p>
+                </div>
+
+                <!-- Stat 2 -->
+                <div class="bg-[#121216] border border-white/5 hover:border-[#E5C158]/40 p-8 rounded-[1.75rem] transition-all duration-400 group hover:-translate-y-2 glow-hover">
+                    <div class="flex justify-between items-start mb-6">
+                        <iconify-icon icon="solar:shield-check-bold-duotone" class="text-3xl text-[#E5C158] group-hover:scale-110 transition-transform duration-300"></iconify-icon>
+                        <span class="text-[0.62rem] font-mono tracking-widest uppercase text-stone-500">SEGURANÇA</span>
+                    </div>
+                    <div class="text-4xl md:text-5xl font-extrabold text-white tracking-tight mb-2">
+                        100%
+                    </div>
+                    <p class="text-xs text-stone-400 font-medium leading-relaxed">
+                        Produtos originais com rastreabilidade total e homologação ANVISA e FDA.
+                    </p>
+                </div>
+
+                <!-- Stat 3 -->
+                <div class="bg-[#121216] border border-white/5 hover:border-[#E5C158]/40 p-8 rounded-[1.75rem] transition-all duration-400 group hover:-translate-y-2 glow-hover">
+                    <div class="flex justify-between items-start mb-6">
+                        <iconify-icon icon="solar:heart-pulse-bold-duotone" class="text-3xl text-[#E5C158] group-hover:scale-110 transition-transform duration-300"></iconify-icon>
+                        <span class="text-[0.62rem] font-mono tracking-widest uppercase text-stone-500">SATISFAÇÃO</span>
+                    </div>
+                    <div class="text-4xl md:text-5xl font-extrabold text-white tracking-tight mb-2">
+                        99.8%
+                    </div>
+                    <p class="text-xs text-stone-400 font-medium leading-relaxed">
+                        Aprovação em avaliações de pacientes que priorizam resultados sutis.
+                    </p>
+                </div>
+
+                <!-- Stat 4 -->
+                <div class="bg-[#121216] border border-white/5 hover:border-[#E5C158]/40 p-8 rounded-[1.75rem] transition-all duration-400 group hover:-translate-y-2 glow-hover">
+                    <div class="flex justify-between items-start mb-6">
+                        <iconify-icon icon="solar:cpu-bolt-bold-duotone" class="text-3xl text-[#E5C158] group-hover:scale-110 transition-transform duration-300"></iconify-icon>
+                        <span class="text-[0.62rem] font-mono tracking-widest uppercase text-stone-500">TECNOLOGIA</span>
+                    </div>
+                    <div class="text-4xl md:text-5xl font-extrabold text-[#E5C158] tracking-tight mb-2">
+                        Padrão Ouro
+                    </div>
+                    <p class="text-xs text-stone-400 font-medium leading-relaxed">
+                        Laser de ponteira criogênica ultra-refrigerada e equipamentos de última geração.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         SEÇÃO SOBRE / FILOSOFIA KELLEN SANTOS
+         ========================================== -->
+    <section id="sobre" class="py-28 md:py-36 bg-[#08080A] relative overflow-hidden border-b border-white/5">
+        
+        <!-- Elemento de Tipografia Cinética em Fundo (Design System V15) -->
+        <div class="kinetic-bg">
+            <div class="kinetic-text">KELLEN SANTOS ESTETICA</div>
+            <div class="kinetic-text" style="animation-direction: reverse; margin-top: -6vw;">HARMONIA NATURAL BIOMEDICINA</div>
+        </div>
+
+        <div class="max-w-[1440px] mx-auto px-6 md:px-12 relative z-10">
+            
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+                
+                <!-- Coluna de Imagem Editorial / Visual de Destaque -->
+                <div class="lg:col-span-5 reveal">
+                    <div class="relative rounded-[2.5rem] overflow-hidden border border-[#E5C158]/30 shadow-[0_20px_50px_rgba(0,0,0,0.8)] group">
+                        <img src="assets/treatment-editorial.jpg" 
+                             alt="Excelência em Procedimentos Estéticos Faciais" 
+                             class="w-full h-[520px] object-cover group-hover:scale-105 transition-transform duration-700 filter brightness-95" />
+                        
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent"></div>
+                        
+                        <!-- Badge Sobreposta de Excelência -->
+                        <div class="absolute bottom-6 left-6 right-6 p-6 rounded-2xl glass-panel border border-[#E5C158]/40">
+                            <div class="flex items-center gap-3 mb-2">
+                                <iconify-icon icon="solar:verified-check-bold" class="text-2xl text-[#E5C158]"></iconify-icon>
+                                <span class="font-bold text-sm tracking-tight text-white">Ciência & Anatomia Individual</span>
+                            </div>
+                            <p class="text-xs text-stone-300 leading-relaxed">
+                                Nenhum rosto é igual a outro. Cada linha é respeitada, preservando sua mímica e autenticidade.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Coluna de Texto & Manifesto -->
+                <div class="lg:col-span-7 space-y-8 reveal delay-200">
+                    <div>
+                        <div class="flex items-center gap-3 mb-4">
+                            <span class="w-8 h-[1px] bg-[#E5C158]"></span>
+                            <span class="text-[0.68rem] font-bold font-mono uppercase tracking-[0.25em] text-[#E5C158]">01 / Nossa Essência</span>
+                        </div>
+                        <h2 class="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tighter leading-tight text-white">
+                            <span class="text-reveal-wrapper"><span class="text-reveal-content">A arte de rejuvenescer</span></span><br>
+                            <span class="text-reveal-wrapper"><span class="text-reveal-content delay-100 text-[#E5C158]">sem perder a sua identidade.</span></span>
+                        </h2>
+                    </div>
+
+                    <p class="text-stone-300 text-base md:text-lg font-light leading-relaxed">
+                        Acreditamos que a verdadeira beleza não reside na transformação artificial, mas na valorização precisa dos seus traços naturais. A clínica <strong class="text-white font-medium">Kellen Santos</strong> nasceu com o propósito de unir o rigor da ciência biomédica ao refinamento do olhar artístico.
+                    </p>
+
+                    <p class="text-stone-400 text-sm md:text-base font-light leading-relaxed">
+                        Com base em Ananindeua, oferecemos um ambiente de acolhimento privativo, onde cada paciente é recebido para uma consulta de avaliação personalizada. Aqui, seu plano de tratamento é desenhado de forma holística — respeitando sua anatomia facial, estilo de vida e objetivos individuais.
+                    </p>
+
+                    <!-- Lista de Pilares do Atendimento -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 border-t border-white/10">
+                        <div class="flex items-start gap-3 p-4 rounded-2xl bg-white/[0.02] border border-white/5 hover:border-[#E5C158]/30 transition-colors">
+                            <iconify-icon icon="solar:magic-stick-3-bold-duotone" class="text-2xl text-[#E5C158] mt-0.5 flex-shrink-0"></iconify-icon>
+                            <div>
+                                <h4 class="text-sm font-bold text-white mb-1">Elegância Sem Exageros</h4>
+                                <p class="text-xs text-stone-400 leading-relaxed">Suavidade e rejuvenescimento imperceptível ao olhar comum.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3 p-4 rounded-2xl bg-white/[0.02] border border-white/5 hover:border-[#E5C158]/30 transition-colors">
+                            <iconify-icon icon="solar:shield-star-bold-duotone" class="text-2xl text-[#E5C158] mt-0.5 flex-shrink-0"></iconify-icon>
+                            <div>
+                                <h4 class="text-sm font-bold text-white mb-1">Injetáveis Nobres</h4>
+                                <p class="text-xs text-stone-400 leading-relaxed">Trabalhamos exclusivamente com as marcas mais prestigiadas do mundo.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-2">
+                        <a href="https://wa.me/559181450800?text=Ol%C3%A1%2C+Kellen+Santos!+Gostaria+de+conhecer+mais+sobre+a+cl%C3%ADnica+e+marcar+uma+avalia%C3%A7%C3%A3o." 
+                           target="_blank" 
+                           class="btn-gold-shimmer px-8 py-3.5 rounded-full text-xs font-bold uppercase tracking-widest inline-flex items-center gap-3">
+                            <span>Conhecer Nossa Filosofia</span>
+                            <iconify-icon icon="solar:arrow-right-linear" class="text-base"></iconify-icon>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==========================================
+         MENU DE PROCEDIMENTOS & TRATAMENTOS
+         Cards Interativos, Categorias & Microinterações
+         ========================================== -->
+    <section id="procedimentos" class="py-28 md:py-36 bg-[#0B0B0E] relative border-b border-white/5">
+        <div class="max-w-[1440px] mx-auto px-6 md:px-12 relative z-10">
+            
+            <!-- Cabeçalho da Seção -->
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 reveal">
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="w-8 h-[1px] bg-[#E5C158]"></span>
+                        <span class="text-[0.68rem] font-bold font-mono uppercase tracking-[0.25em] text-[#E5C158]">02 / Portfólio Clínico</span>
+                    </div>
+                    <h2 class="text-4xl sm:text-6xl font-extrabold tracking-tighter text-white">
+                        <span class="text-reveal-wrapper"><span class="text-reveal-content">Procedimentos &</span></span><br>
+                        <span class="text-reveal-wrapper"><span class="text-reveal-content delay-100 text-[#E5C158]">Tecnologias Avançadas</span></span>
+                    </h2>
+                </div>
+                
+                <p class="text-stone-400 text-sm md:text-base max-w-md mt-6 md:mt-0 font-light leading-relaxed">
+                    Protocolos cientificamente validados para rejuvenescer, harmonizar contornos e promover o bem-estar duradouro da sua pele.
+                </p>
+            </div>
+
+            <!-- Filtros por Categoria -->
+            <div class="flex flex-wrap items-center gap-3 mb-12 reveal delay-100">
+                <button class="tab-filter-btn active" data-category="all">Todos os Procedimentos</button>
+                <button class="tab-filter-btn" data-category="facial">Harmonização & Facial</button>
+                <button class="tab-filter-btn" data-category="laser">Depilação a Laser</button>
+                <button class="tab-filter-btn" data-category="corporal">Corporal & Contorno</button>
+            </div>
+
+            <!-- Grid de Cards de Procedimentos -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="treatments-grid">
+                
+                <!-- Card 1: Harmonização Facial -->
+                <div class="luxury-card treatment-card p-8 flex flex-col justify-between reveal" data-category="facial">
+                    <div>
+                        <div class="flex justify-between items-start mb-6">
+                            <span class="typo-pill border-[#E5C158]/30 text-[#E5C158]">FACIAL • ESTRUTURAL</span>
+                            <iconify-icon icon="solar:face-scan-circle-bold-duotone" class="text-3xl text-stone-500 group-hover:text-[#E5C158] transition-colors"></iconify-icon>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-3 tracking-tight">Harmonização Facial & Preenchimentos</h3>
+                        <p class="text-stone-400 text-sm leading-relaxed mb-6 font-light">
+                            Equilíbrio e simetria das proporções faciais com Ácido Hialurônico reticulado de alta pureza. Realce discreto de lábios, mento, mandíbula e malar.
+                        </p>
+                        
+                        <div class="space-y-2 mb-8 pt-4 border-t border-white/5 text-xs text-stone-300 font-mono">
+                            <div class="flex items-center gap-2">
+                                <iconify-icon icon="solar:check-circle-bold" class="text-[#E5C158]"></iconify-icon>
+                                <span>Restauração dos vetores de sustentação</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <iconify-icon icon="solar:check-circle-bold" class="text-[#E5C158]"></iconify-icon>
+                                <span>Preenchimento labial com efeito hidratação</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <iconify-icon icon="solar:clock-circle-bold" class="text-stone-500"></iconify-icon>
+                                <span class="text-stone-400">Duração média: 45 a 60 min</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="https://wa.me/559181450800?text=Ol%C3%A1%2C+Kellen+Santos!+Gostaria+de+agendar+uma+avalia%C3%A7%C3%A3o+para+Harmoniza%C3%A7%C3%A3o+Facial." 
+                       target="_blank" 
+                       class="w-full py-3.5 rounded-xl bg-white/5 hover:bg-[#E5C158] text-white hover:text-black font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition-all duration-300 border border-white/10 hover:border-[#E5C158]">
+                        <span>Consultar Protocolo</span>
+                        <iconify-icon icon="solar:arrow-right-linear" class="text-base"></iconify-icon>
+                    </a>
+                </div>
+
+                <!-- Card 2: Bioestimuladores de Colágeno -->
+                <div class="luxury-card treatment-card p-8 flex flex-col justify-between reveal delay-100" data-category="facial corporal">
+                    <div>
+                        <div class="flex justify-between items-start mb-6">
+                            <span class="typo-pill border-[#E5C158]/30 text-[#E5C158]">COLÁGENO • FIRMEZA</span>
+                            <iconify-icon icon="solar:atom-bold-duotone" class="text-3xl text-stone-500 group-hover:text-[#E5C158] transition-colors"></iconify-icon>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-3 tracking-tight">Bioestimuladores de Colágeno</h3>
+                        <p class="text-stone-400 text-sm leading-relaxed mb-6 font-light">
+                            Aplicação de substâncias bioativas (Radiesse / Sculptra) que induzem o próprio organismo a produzir colágeno novo, revertendo a flacidez tecidual.
+                        </p>
+                        
+                        <div class="space-y-2 mb-8 pt-4 border-t border-white/5 text-xs text-stone-300 font-mono">
+                            <div class="flex items-center gap-2">
+                                <iconify-icon icon="solar:check-circle-bold" class="text-[#E5C158]"></iconify-icon>
+                                <span>Efeito lifting sem cirurgia e sem volume excessivo</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <iconify-icon icon="solar:check-circle-bold" class="text-[#E5C158]"></iconify-icon>
+                                <span>Ação progressiva por até 24 meses</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <iconify-icon icon="solar:clock-circle-bold" class="text-stone-500"></iconify-icon>
+                                <span class="text-stone-400">Aplicação facial e corporal</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="https://wa.me/559181450800?text=Ol%C3%A1%2C+gostaria+de+informa%C3%A7%C3%B5es+sobre+os+Bioestimuladores+de+Col%C3%A1geno+na+Kellen+Santos." 
+                       target="_blank" 
+                       class="w-full py-3.5 rounded-xl bg-white/5 hover:bg-[#E5C158] text-white hover:text-black font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition-all duration-300 border border-white/10 hover:border-[#E5C158]">
+                        <span>Consultar Protocolo</span>
+                        <iconify-icon icon="solar:arrow-right-linear" class="text-base"></iconify-icon>
+                    </a>
+                </div>
+
+                <!-- Card 3: Toxina Botulínica (Botox) -->
+                <div class="luxury-card treatment-card p-8 flex flex-col justify-between reveal delay-200" data-category="facial">
+                    <div>
+                        <div class="flex justify-between items-start mb-6">
+                            <span class="typo-pill border-[#E5C158]/30 text-[#E5C158]">PREVENTIVO • SUAVIZAÇÃO</span>
+                            <iconify-icon icon="solar:magic-stick-bold-duotone" class="text-3xl text-stone-500 group-hover:text-[#E5C158] transition-colors"></iconify-icon>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-3 tracking-tight">Toxina Botulínica (Botox)</h3>
+                        <p class="text-stone-400 text-sm leading-relaxed mb-6 font-light">
+                            Relaxamento seletivo da musculatura facial para suavizar rugas dinâmicas na testa, pés de galinha e glabela, mantendo a expressividade leve e descansada.
+                        </p>
+                        
+                        <div class="space-y-2 mb-8 pt-4 border-t border-white/5 text-xs text-stone-300 font-mono">
+                            <div class="flex items-center gap-2">
+                                <iconify-icon icon="solar:check-circle-bold" class="text-[#E5C158]"></iconify-icon>
+                                <span>Prevenção e tratamento de rugas e marcas</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <iconify-icon icon="solar:check-circle-bold" class="text-[#E5C158]"></iconify-icon>
+                                <span>Aspecto descansado, jovial e elegante</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <iconify-icon icon="solar:clock-circle-bold" class="text-stone-500"></iconify-icon>
+                                <span class="text-stone-400">Procedimento rápido e sem downtime</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="https://wa.me/559181450800?text=Ol%C3%A1%2C+gostaria+de+agendar+uma+sess%C3%A3o+de+Toxina+Botul%C3%ADnica+(Botox)+com+Kellen+Santos." 
+                       target="_blank" 
+                       class="w-full py-3.5 rounded-xl bg-white/5 hover:bg-[#E5C158] text-white hover:text-black font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition-all duration-300 border border-white/10 hover:border-[#E5C158]">
+                        <span>Consultar Protocolo</span>
+                        <iconify-icon icon="solar:arrow-right-linear" class="text-base"></iconify-icon>
+                    </a>
+                </div>
+
+                <!-- Card 4: Depilação a Laser Indolor -->
+                <div class="luxury-card treatment-card p-8 flex flex-col justify-between reveal" data-category="laser">
+                    <div>
+                        <div class="flex justify-between items-start mb-6">
+                            <span class="typo-pill border-[#E5C158]/30 text-[#E5C158]">LASER • PELE DE SEDA</span>
+                            <iconify-icon icon="solar:sun-fog-bold-duotone" class="text-3xl text-[#E5C158] group-hover:scale-110 transition-transform"></iconify-icon>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-3 tracking-tight">Depilação a Laser Velvet Touch</h3>
+                        <p class="text-stone-400 text-sm leading-relaxed mb-6 font-light">
+                            Tecnologia definitiva com resfriamento térmico criogênico na ponteira. Eliminação permanente dos pelos e foliculite, com conforto supremo e sem dor.
+                        </p>
+                        
+                        <div class="space-y-2 mb-8 pt-4 border-t border-white/5 text-xs text-stone-300 font-mono">
+                            <div class="flex items-center gap-2">
+                                <iconify-icon icon="solar:check-circle-bold" class="text-[#E5C158]"></iconify-icon>
+                                <span>Ponteira ultra refrigerada (-5°C): praticamente indolor</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <iconify-icon icon="solar:check-circle-bold" class="text-[#E5C158]"></iconify-icon>
+                                <span>Pele livre de manchas causadas por lâminas e cera</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <iconify-icon icon="solar:shield-check-bold" class="text-[#E5C158]"></iconify-icon>
+                                <span class="text-stone-300">Seguro para todos os fototipos de pele</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="https://wa.me/559181450800?text=Ol%C3%A1%2C+quero+saber+mais+sobre+os+pacotes+de+Depila%C3%A7%C3%A3o+a+Laser+da+Kellen+Santos." 
+                       target="_blank" 
+                       class="w-full py-3.5 rounded-xl bg-[#E5C158] text-black font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition-all duration-300 hover:bg-[#F0CE68] shadow-[0_5px_15px_rgba(229,193,88,0.25)]">
+                        <span>Ver Pacotes de Laser</span>
+                        <iconify-icon icon="solar:arrow-right-linear" class="text-base"></iconify-icon>
+                    </a>
+                </div>
+
+                <!-- Card 5: Limpeza de Pele Skin Deluxe -->
+                <div class="luxury-card treatment-card p-8 flex flex-col justify-between reveal delay-100" data-category="facial">
+                    <div>
+                        <div class="flex justify-between items-start mb-6">
+                            <span class="typo-pill border-[#E5C158]/30 text-[#E5C158]">REVITALIZAÇÃO • SPA</span>
+                            <iconify-icon icon="solar:dropper-bold-duotone" class="text-3xl text-stone-500 group-hover:text-[#E5C158] transition-colors"></iconify-icon>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-3 tracking-tight">Limpeza Profunda & Hidroinfusão</h3>
+                        <p class="text-stone-400 text-sm leading-relaxed mb-6 font-light">
+                            Protocolo multietapas com extração cuidadosa de cravos e impurezas, peeling de diamante, hidrosucção e infusão de séruns vitamínicos e ácido hialurônico.
+                        </p>
+                        
+                        <div class="space-y-2 mb-8 pt-4 border-t border-white/5 text-xs text-stone-300 font-mono">
+                            <div class="flex items-center gap-2">
+                                <iconify-icon icon="solar:check-circle-bold" class="text-[#E5C158]"></iconify-icon>
+                                <span>Desobstrução de poros e equilíbrio da oleosidade</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <iconify-icon icon="solar:check-circle-bold" class="text-[#E5C158]"></iconify-icon>
+                                <span>Hidratação profunda com viço imediato</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <iconify-icon icon="solar:clock-circle-bold" class="text-stone-500"></iconify-icon>
+                                <span class="text-stone-400">Sessão relaxante de 80 minutos</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="https://wa.me/559181450800?text=Ol%C3%A1%2C+gostaria+de+agendar+uma+Limpeza+de+Pele+Profunda+na+Kellen+Santos." 
+                       target="_blank" 
+                       class="w-full py-3.5 rounded-xl bg-white/5 hover:bg-[#E5C158] text-white hover:text-black font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition-all duration-300 border border-white/10 hover:border-[#E5C158]">
+                        <span>Consultar Protocolo</span>
+                        <iconify-icon icon="solar:arrow-right-linear" class="text-base"></iconify-icon>
+                    </a>
+                </div>
+
+                <!-- Card 6: Lipo Enzimática de Papada & Contorno -->
+                <div class="luxury-card treatment-card p-8 flex flex-col justify-between reveal delay-200" data-category="facial corporal">
+                    <div>
+                        <div class="flex justify-between items-start mb-6">
+                            <span class="typo-pill border-[#E5C158]/30 text-[#E5C158]">DEFINIÇÃO • ÂNGULOS</span>
+                            <iconify-icon icon="solar:scissors-square-bold-duotone" class="text-3xl text-stone-500 group-hover:text-[#E5C158] transition-colors"></iconify-icon>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-3 tracking-tight">Lipo de Papada & Ângulo Mandibular</h3>
+                        <p class="text-stone-400 text-sm leading-relaxed mb-6 font-light">
+                            Aplicação de enzimas lipolíticas biocompatíveis para queima de gordura submentoniana e definição nítida da transição entre rosto e pescoço.
+                        </p>
+                        
+                        <div class="space-y-2 mb-8 pt-4 border-t border-white/5 text-xs text-stone-300 font-mono">
+                            <div class="flex items-center gap-2">
+                                <iconify-icon icon="solar:check-circle-bold" class="text-[#E5C158]"></iconify-icon>
+                                <span>Eliminação definitiva de células de gordura</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <iconify-icon icon="solar:check-circle-bold" class="text-[#E5C158]"></iconify-icon>
+                                <span>Melhora imediata do perfil fotográfico</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <iconify-icon icon="solar:clock-circle-bold" class="text-stone-500"></iconify-icon>
+                                <span class="text-stone-400">Protocolo de 2 a 4 sessões</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="https://wa.me/559181450800?text=Ol%C3%A1%2C+quero+avalia%C3%A7%C3%A3o+para+Lipo+de+Papada+e+Contorno+na+Kellen+Santos." 
+                       target="_blank" 
+                       class="w-full py-3.5 rounded-xl bg-white/5 hover:bg-[#E5C158] text-white hover:text-black font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition-all duration-300 border border-white/10 hover:border-[#E5C158]">
+                        <span>Consultar Protocolo</span>
+                        <iconify-icon icon="solar:arrow-right-linear" class="text-base"></iconify-icon>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==========================================
+         MÓDULO INTERATIVO: DESCUBRA SEU PROTOCOLO IDEAL
+         Baseado nos módulos interativos do Design System V15
+         ========================================== -->
+    <section id="quiz" class="py-28 md:py-36 bg-[#08080A] relative border-b border-white/5 overflow-hidden">
+        
+        <!-- Flashlight Zone no Quiz -->
+        <div class="flashlight-zone absolute inset-0 pointer-events-none"></div>
+
+        <div class="max-w-[1200px] mx-auto px-6 md:px-12 relative z-10">
+            
+            <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+                <div class="flex items-center justify-center gap-3 mb-4">
+                    <span class="w-8 h-[1px] bg-[#E5C158]"></span>
+                    <span class="text-[0.68rem] font-bold font-mono uppercase tracking-[0.25em] text-[#E5C158]">03 / Avaliação Guiada</span>
+                    <span class="w-8 h-[1px] bg-[#E5C158]"></span>
+                </div>
+                <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tighter text-white mb-4">
+                    Descubra Seu Protocolo Ideal
+                </h2>
+                <p class="text-stone-400 text-sm md:text-base font-light">
+                    Selecione qual é o seu principal objetivo estético no momento para receber uma recomendação personalizada de tratamento.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                
+                <!-- Coluna de Seleção de Objetivos -->
+                <div class="lg:col-span-5 space-y-3 reveal">
+                    <button class="quiz-option-btn active w-full p-5 rounded-2xl bg-[#121216] border border-[#E5C158] bg-[#E5C158]/10 text-left transition-all duration-300 flex items-center justify-between group hover:border-[#E5C158]" data-quiz-key="facial_antiaging">
+                        <div class="flex items-center gap-4">
+                            <iconify-icon icon="solar:sparkler-bold-duotone" class="text-2xl text-[#E5C158]"></iconify-icon>
+                            <div>
+                                <h4 class="text-sm font-bold text-white group-hover:text-[#E5C158] transition-colors">Rejuvenescimento & Linhas</h4>
+                                <span class="text-xs text-stone-400 font-mono">Rugas, viço e flacidez facial leve</span>
+                            </div>
+                        </div>
+                        <iconify-icon icon="solar:alt-arrow-right-linear" class="text-stone-500 group-hover:text-[#E5C158] transition-colors"></iconify-icon>
+                    </button>
+
+                    <button class="quiz-option-btn w-full p-5 rounded-2xl bg-[#121216] border border-white/5 text-left transition-all duration-300 flex items-center justify-between group hover:border-[#E5C158]" data-quiz-key="contorno_mandibular">
+                        <div class="flex items-center gap-4">
+                            <iconify-icon icon="solar:face-scan-circle-bold-duotone" class="text-2xl text-stone-400 group-hover:text-[#E5C158] transition-colors"></iconify-icon>
+                            <div>
+                                <h4 class="text-sm font-bold text-white group-hover:text-[#E5C158] transition-colors">Contorno & Definição Mandibular</h4>
+                                <span class="text-xs text-stone-400 font-mono">Ângulos do queixo e redução de papada</span>
+                            </div>
+                        </div>
+                        <iconify-icon icon="solar:alt-arrow-right-linear" class="text-stone-500 group-hover:text-[#E5C158] transition-colors"></iconify-icon>
+                    </button>
+
+                    <button class="quiz-option-btn w-full p-5 rounded-2xl bg-[#121216] border border-white/5 text-left transition-all duration-300 flex items-center justify-between group hover:border-[#E5C158]" data-quiz-key="depilacao_laser">
+                        <div class="flex items-center gap-4">
+                            <iconify-icon icon="solar:sun-fog-bold-duotone" class="text-2xl text-stone-400 group-hover:text-[#E5C158] transition-colors"></iconify-icon>
+                            <div>
+                                <h4 class="text-sm font-bold text-white group-hover:text-[#E5C158] transition-colors">Depilação a Laser Sem Dor</h4>
+                                <span class="text-xs text-stone-400 font-mono">Eliminação definitiva de pelos e foliculite</span>
+                            </div>
+                        </div>
+                        <iconify-icon icon="solar:alt-arrow-right-linear" class="text-stone-500 group-hover:text-[#E5C158] transition-colors"></iconify-icon>
+                    </button>
+
+                    <button class="quiz-option-btn w-full p-5 rounded-2xl bg-[#121216] border border-white/5 text-left transition-all duration-300 flex items-center justify-between group hover:border-[#E5C158]" data-quiz-key="qualidade_pele">
+                        <div class="flex items-center gap-4">
+                            <iconify-icon icon="solar:dropper-bold-duotone" class="text-2xl text-stone-400 group-hover:text-[#E5C158] transition-colors"></iconify-icon>
+                            <div>
+                                <h4 class="text-sm font-bold text-white group-hover:text-[#E5C158] transition-colors">Poros, Cravos & Textura da Pele</h4>
+                                <span class="text-xs text-stone-400 font-mono">Hidratação profunda e renovação celular</span>
+                            </div>
+                        </div>
+                        <iconify-icon icon="solar:alt-arrow-right-linear" class="text-stone-500 group-hover:text-[#E5C158] transition-colors"></iconify-icon>
+                    </button>
+
+                    <button class="quiz-option-btn w-full p-5 rounded-2xl bg-[#121216] border border-white/5 text-left transition-all duration-300 flex items-center justify-between group hover:border-[#E5C158]" data-quiz-key="corporal_firmeza">
+                        <div class="flex items-center gap-4">
+                            <iconify-icon icon="solar:shield-star-bold-duotone" class="text-2xl text-stone-400 group-hover:text-[#E5C158] transition-colors"></iconify-icon>
+                            <div>
+                                <h4 class="text-sm font-bold text-white group-hover:text-[#E5C158] transition-colors">Firmeza & Remodelamento Corporal</h4>
+                                <span class="text-xs text-stone-400 font-mono">Combate à flacidez em glúteos e abdômen</span>
+                            </div>
+                        </div>
+                        <iconify-icon icon="solar:alt-arrow-right-linear" class="text-stone-500 group-hover:text-[#E5C158] transition-colors"></iconify-icon>
+                    </button>
+                </div>
+
+                <!-- Coluna de Exibição do Resultado Dinâmico (Elaborate Data Card do DS15) -->
+                <div class="lg:col-span-7 reveal delay-200">
+                    <div id="quiz-result-box" class="p-8 md:p-12 rounded-[2.5rem] bg-[#121216] border border-[#E5C158]/30 shadow-[0_25px_60px_rgba(0,0,0,0.6)] relative overflow-hidden transition-all duration-500">
+                        
+                        <!-- Elemento decorativo de brilho no canto -->
+                        <div class="absolute -top-20 -right-20 w-64 h-64 bg-[#E5C158]/10 rounded-full blur-[80px] pointer-events-none"></div>
+
+                        <div class="flex items-center justify-between mb-8">
+                            <span class="glass-pill">
+                                <span class="pulsing-dot-gold"></span>
+                                <span>RECOMENDAÇÃO BIOMÉDICA</span>
+                            </span>
+                            <span class="text-xs font-mono text-stone-400">100% Personalizado</span>
+                        </div>
+
+                        <h3 id="quiz-protocol-title" class="text-2xl sm:text-3xl font-extrabold text-white mb-4 tracking-tight">
+                            Protocolo Glow & Arquitetura Facial
+                        </h3>
+
+                        <p id="quiz-protocol-desc" class="text-stone-300 text-sm md:text-base leading-relaxed mb-8 font-light">
+                            Combinação refinada de Toxina Botulínica preventiva com Bioestimulador de Colágeno (Radiesse/Sculptra) para restauração do viço, firmeza estrutural e contorno harmônico sem volumização artificial.
+                        </p>
+
+                        <div class="space-y-3 mb-10 pt-6 border-t border-white/10">
+                            <span class="text-xs font-mono font-bold tracking-wider uppercase text-[#E5C158] block mb-2">Principais Benefícios Esperados:</span>
+                            <ul id="quiz-protocol-bullets" class="space-y-3">
+                                <li class="flex items-start gap-3 text-sm text-stone-300">
+                                    <iconify-icon icon="solar:check-circle-bold" class="text-lg text-[#E5C158] mt-0.5 flex-shrink-0"></iconify-icon>
+                                    <span>Suavização de linhas de expressão e rugas dinâmicas</span>
+                                </li>
+                                <li class="flex items-start gap-3 text-sm text-stone-300">
+                                    <iconify-icon icon="solar:check-circle-bold" class="text-lg text-[#E5C158] mt-0.5 flex-shrink-0"></iconify-icon>
+                                    <span>Estímulo biológico profundo de colágeno tipo I e III</span>
+                                </li>
+                                <li class="flex items-start gap-3 text-sm text-stone-300">
+                                    <iconify-icon icon="solar:check-circle-bold" class="text-lg text-[#E5C158] mt-0.5 flex-shrink-0"></iconify-icon>
+                                    <span>Recuperação da densidade dérmica com efeito lifting natural</span>
+                                </li>
+                                <li class="flex items-start gap-3 text-sm text-stone-300">
+                                    <iconify-icon icon="solar:check-circle-bold" class="text-lg text-[#E5C158] mt-0.5 flex-shrink-0"></iconify-icon>
+                                    <span>Avaliação com mapeamento fotográfico e simetria computadorizada</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <a id="quiz-protocol-cta" 
+                           href="https://wa.me/559181450800?text=Ol%C3%A1%2C+Dra.+Kellen+Santos!+Fiz+o+teste+no+site+e+meu+foco+%C3%A9+Rejuvenescimento+Facial.+Gostaria+de+agendar+uma+avalia%C3%A7%C3%A3o+para+o+Protocolo+Glow+%26+Arquitetura+Facial." 
+                           target="_blank" 
+                           rel="noopener noreferrer" 
+                           class="btn-gold-shimmer w-full py-4 rounded-2xl text-center text-sm font-bold uppercase tracking-wider flex items-center justify-center gap-3">
+                            <span>Agendar Este Protocolo via WhatsApp</span>
+                            <iconify-icon icon="solar:arrow-right-linear" class="text-lg"></iconify-icon>
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==========================================
+         O ESPAÇO & EXPERIÊNCIA SENSORIAL
+         Destaque com Imagem Gerada da Clínica
+         ========================================== -->
+    <section id="espaco" class="py-28 md:py-36 bg-[#0B0B0E] relative border-b border-white/5">
+        <div class="max-w-[1440px] mx-auto px-6 md:px-12 relative z-10">
+            
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+                
+                <!-- Coluna de Informações do Espaço -->
+                <div class="lg:col-span-6 space-y-8 reveal">
+                    <div>
+                        <div class="flex items-center gap-3 mb-4">
+                            <span class="w-8 h-[1px] bg-[#E5C158]"></span>
+                            <span class="text-[0.68rem] font-bold font-mono uppercase tracking-[0.25em] text-[#E5C158]">04 / Ambiente Exclusivo</span>
+                        </div>
+                        <h2 class="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tighter text-white leading-tight">
+                            Um santuário privativo de beleza e bem-estar.
+                        </h2>
+                    </div>
+
+                    <p class="text-stone-300 text-base md:text-lg font-light leading-relaxed">
+                        Projetamos cada detalhe da clínica para que sua visita seja um momento de pausa, acolhimento e recarga sensorial no coração de Ananindeua.
+                    </p>
+
+                    <!-- Lista de atributos do espaço -->
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-start gap-4 p-4 rounded-2xl bg-white/[0.02] border border-white/5">
+                            <div class="w-10 h-10 rounded-xl bg-[#E5C158]/10 flex items-center justify-center text-[#E5C158] flex-shrink-0">
+                                <iconify-icon icon="solar:lock-keyhole-minimalistic-bold-duotone" class="text-xl"></iconify-icon>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-white mb-1">Privacidade Absoluta</h4>
+                                <p class="text-xs text-stone-400 leading-relaxed">Salas de atendimento individuais com conforto acústico e total discrição.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-4 rounded-2xl bg-white/[0.02] border border-white/5">
+                            <div class="w-10 h-10 rounded-xl bg-[#E5C158]/10 flex items-center justify-center text-[#E5C158] flex-shrink-0">
+                                <iconify-icon icon="solar:shield-cross-bold-duotone" class="text-xl"></iconify-icon>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-white mb-1">Rigor Sanitário & Biossegurança</h4>
+                                <p class="text-xs text-stone-400 leading-relaxed">Materiais 100% estéreis e descartáveis, com esterilização de nível hospitalar.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-4 rounded-2xl bg-white/[0.02] border border-white/5">
+                            <div class="w-10 h-10 rounded-xl bg-[#E5C158]/10 flex items-center justify-center text-[#E5C158] flex-shrink-0">
+                                <iconify-icon icon="solar:map-point-wave-bold-duotone" class="text-xl"></iconify-icon>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-white mb-1">Fácil Acesso no Coqueiro</h4>
+                                <p class="text-xs text-stone-400 leading-relaxed">Localização privilegiada na Av. Gov. Hélio Gueiros com facilidade de estacionamento.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Coluna de Imagem do Espaço Clínico -->
+                <div class="lg:col-span-6 reveal delay-200">
+                    <div class="relative rounded-[2.5rem] overflow-hidden border border-[#E5C158]/30 shadow-[0_25px_60px_rgba(0,0,0,0.9)] group">
+                        <img src="assets/clinic-space.jpg" 
+                             alt="Consultório Boutique Kellen Santos" 
+                             class="w-full h-[520px] object-cover group-hover:scale-105 transition-transform duration-700" />
+                        
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
+
+                        <!-- Card Flutuante de Endereço -->
+                        <div class="absolute bottom-6 left-6 right-6 p-6 rounded-2xl glass-panel border border-[#E5C158]/30 flex items-center justify-between">
+                            <div>
+                                <span class="text-[0.62rem] font-mono tracking-widest uppercase text-[#E5C158] block mb-1">ENDEREÇO DA CLÍNICA</span>
+                                <p class="text-xs text-white font-medium">Av. Gov. Hélio Gueiros, QD 208 - Coqueiro, Ananindeua</p>
+                            </div>
+                            <a href="#contato" class="p-3 rounded-full bg-[#E5C158] text-black hover:scale-110 transition-transform">
+                                <iconify-icon icon="solar:routing-2-bold" class="text-xl"></iconify-icon>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==========================================
+         DEPOIMENTOS & EXPERIÊNCIA DE PACIENTES
+         ========================================== -->
+    <section id="depoimentos" class="py-28 md:py-36 bg-[#08080A] relative border-b border-white/5">
+        <div class="max-w-[1440px] mx-auto px-6 md:px-12 relative z-10">
+            
+            <div class="text-center max-w-2xl mx-auto mb-20 reveal">
+                <div class="flex items-center justify-center gap-3 mb-4">
+                    <span class="w-8 h-[1px] bg-[#E5C158]"></span>
+                    <span class="text-[0.68rem] font-bold font-mono uppercase tracking-[0.25em] text-[#E5C158]">05 / Histórias Reais</span>
+                    <span class="w-8 h-[1px] bg-[#E5C158]"></span>
+                </div>
+                <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tighter text-white mb-4">
+                    A voz de quem vivenciou a experiência Kellen Santos
+                </h2>
+                <p class="text-stone-400 text-sm md:text-base font-light">
+                    O maior reconhecimento do nosso trabalho é a confiança e o brilho renovado no olhar de cada paciente.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Depoimento 1 -->
+                <div class="luxury-card p-8 flex flex-col justify-between reveal glow-hover">
+                    <div>
+                        <!-- Estrelas Douradas -->
+                        <div class="flex items-center gap-1.5 text-[#E5C158] text-lg mb-6">
+                            <iconify-icon icon="solar:star-bold"></iconify-icon>
+                            <iconify-icon icon="solar:star-bold"></iconify-icon>
+                            <iconify-icon icon="solar:star-bold"></iconify-icon>
+                            <iconify-icon icon="solar:star-bold"></iconify-icon>
+                            <iconify-icon icon="solar:star-bold"></iconify-icon>
+                        </div>
+                        <p class="text-stone-300 text-sm leading-relaxed italic mb-8 font-light">
+                            "Eu tinha muito receio de fazer harmonização e ficar com o rosto artificial ou exagerado. A Kellen teve uma sensibilidade ímpar: analisou minhas proporções e fez apenas o necessário para devolver sustentação ao meu rosto. As pessoas dizem que pareço descansada, mas ninguém nota que fiz procedimento. Perfeição pura!"
+                        </p>
+                    </div>
+
+                    <div class="pt-6 border-t border-white/5 flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-[#E5C158]/20 border border-[#E5C158]/40 flex items-center justify-center font-bold text-[#E5C158] text-sm">
+                            MC
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Mariana Cavalcante</h4>
+                            <span class="text-xs text-stone-500 font-mono">Harmonização Facial & Botox</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Depoimento 2 -->
+                <div class="luxury-card p-8 flex flex-col justify-between reveal delay-100 glow-hover">
+                    <div>
+                        <div class="flex items-center gap-1.5 text-[#E5C158] text-lg mb-6">
+                            <iconify-icon icon="solar:star-bold"></iconify-icon>
+                            <iconify-icon icon="solar:star-bold"></iconify-icon>
+                            <iconify-icon icon="solar:star-bold"></iconify-icon>
+                            <iconify-icon icon="solar:star-bold"></iconify-icon>
+                            <iconify-icon icon="solar:star-bold"></iconify-icon>
+                        </div>
+                        <p class="text-stone-300 text-sm leading-relaxed italic mb-8 font-light">
+                            "A depilação a laser deles mudou a minha rotina! Já havia tentado outros lasers que doíam demais e não surtiam efeito. O laser da Kellen Santos é realmente quase imperceptível devido ao geladinho da ponteira e em poucas sessões meus pelos e as foliculites sumiram por completo. Recomendo de olhos fechados."
+                        </p>
+                    </div>
+
+                    <div class="pt-6 border-t border-white/5 flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-[#E5C158]/20 border border-[#E5C158]/40 flex items-center justify-center font-bold text-[#E5C158] text-sm">
+                            FR
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Fernanda Ribeiro</h4>
+                            <span class="text-xs text-stone-500 font-mono">Depilação a Laser Velvet Touch</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Depoimento 3 -->
+                <div class="luxury-card p-8 flex flex-col justify-between reveal delay-200 glow-hover">
+                    <div>
+                        <div class="flex items-center gap-1.5 text-[#E5C158] text-lg mb-6">
+                            <iconify-icon icon="solar:star-bold"></iconify-icon>
+                            <iconify-icon icon="solar:star-bold"></iconify-icon>
+                            <iconify-icon icon="solar:star-bold"></iconify-icon>
+                            <iconify-icon icon="solar:star-bold"></iconify-icon>
+                            <iconify-icon icon="solar:star-bold"></iconify-icon>
+                        </div>
+                        <p class="text-stone-300 text-sm leading-relaxed italic mb-8 font-light">
+                            "Fiz o protocolo de bioestimulador de colágeno e limpeza profunda. O espaço é impecável, parece um spa de luxo. A atenção e o acompanhamento pós-procedimento por mensagem para saber como eu estava se recuperando me conquistaram. É um padrão de atendimento raro em Ananindeua."
+                        </p>
+                    </div>
+
+                    <div class="pt-6 border-t border-white/5 flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-[#E5C158]/20 border border-[#E5C158]/40 flex items-center justify-center font-bold text-[#E5C158] text-sm">
+                            PS
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Patrícia Souza</h4>
+                            <span class="text-xs text-stone-500 font-mono">Bioestimulador & Hidroinfusão</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==========================================
+         FAQ INTERATIVO (ACORDEÃO DO DESIGN SYSTEM)
+         ========================================== -->
+    <section class="py-28 md:py-36 bg-[#0B0B0E] relative border-b border-white/5">
+        <div class="max-w-[1000px] mx-auto px-6 md:px-12 relative z-10">
+            
+            <div class="text-center mb-16 reveal">
+                <div class="flex items-center justify-center gap-3 mb-4">
+                    <span class="w-8 h-[1px] bg-[#E5C158]"></span>
+                    <span class="text-[0.68rem] font-bold font-mono uppercase tracking-[0.25em] text-[#E5C158]">06 / Esclarecimentos</span>
+                    <span class="w-8 h-[1px] bg-[#E5C158]"></span>
+                </div>
+                <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tighter text-white mb-4">
+                    Perguntas Frequentes
+                </h2>
+                <p class="text-stone-400 text-sm md:text-base font-light">
+                    Tudo o que você precisa saber antes de iniciar o seu protocolo conosco.
+                </p>
+            </div>
+
+            <div class="space-y-2 reveal">
+                
+                <!-- FAQ 1 -->
+                <div class="faq-item active">
+                    <div class="faq-header">
+                        <h4 class="text-base sm:text-lg font-bold text-white tracking-tight">Como funciona a consulta de avaliação inicial?</h4>
+                        <iconify-icon icon="solar:add-circle-linear" class="faq-icon text-2xl text-stone-400"></iconify-icon>
+                    </div>
+                    <div class="faq-content text-stone-400 text-sm leading-relaxed font-light">
+                        Durante a consulta, realizamos uma anamnese detalhada e um mapeamento fotográfico tridimensional das proporções do seu rosto ou área corporal. Conversamos sobre suas expectativas e desenhamos um plano personalizado, explicando cada etapa, produtos indicados e prazos de evolução.
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="faq-item">
+                    <div class="faq-header">
+                        <h4 class="text-base sm:text-lg font-bold text-white tracking-tight">Os procedimentos podem deixar o meu rosto artificial?</h4>
+                        <iconify-icon icon="solar:add-circle-linear" class="faq-icon text-2xl text-stone-400"></iconify-icon>
+                    </div>
+                    <div class="faq-content text-stone-400 text-sm leading-relaxed font-light">
+                        Não. Nossa filosofia é estritamente pautada na elegância natural e na não-artificialidade. Trabalhamos com microdoses e pontos de sustentação anatômicos, preservando suas expressões nativas para que o resultado transmita jovialidade e descanso, sem estigma de procedimento exagerado.
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="faq-item">
+                    <div class="faq-header">
+                        <h4 class="text-base sm:text-lg font-bold text-white tracking-tight">A depilação a laser dói?</h4>
+                        <iconify-icon icon="solar:add-circle-linear" class="faq-icon text-2xl text-stone-400"></iconify-icon>
+                    </div>
+                    <div class="faq-content text-stone-400 text-sm leading-relaxed font-light">
+                        Nosso equipamento de laser conta com uma tecnologia avançada de resfriamento contínuo na ponteira, que resfria a pele a temperaturas negativas (-5°C) no exato instante do disparo. Isso torna o procedimento praticamente indolor e muito mais confortável do que os lasers convencionais e a depilação com cera.
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="faq-item">
+                    <div class="faq-header">
+                        <h4 class="text-base sm:text-lg font-bold text-white tracking-tight">Qual é o tempo de recuperação (downtime)?</h4>
+                        <iconify-icon icon="solar:add-circle-linear" class="faq-icon text-2xl text-stone-400"></iconify-icon>
+                    </div>
+                    <div class="faq-content text-stone-400 text-sm leading-relaxed font-light">
+                        A grande maioria dos nossos procedimentos (como Botox, preenchimentos leves e bioestimuladores) permite retorno imediato às atividades cotidianas no mesmo dia. Fornecemos todas as orientações pós-atendimento para evitar edemas e hematomas.
+                    </div>
+                </div>
+
+                <!-- FAQ 5 -->
+                <div class="faq-item">
+                    <div class="faq-header">
+                        <h4 class="text-base sm:text-lg font-bold text-white tracking-tight">Onde a clínica fica localizada e quais são os horários?</h4>
+                        <iconify-icon icon="solar:add-circle-linear" class="faq-icon text-2xl text-stone-400"></iconify-icon>
+                    </div>
+                    <div class="faq-content text-stone-400 text-sm leading-relaxed font-light">
+                        Estamos localizados no Loteamento Nova Esperança, Tv Fé em Deus, Av. Gov. Hélio Gueiros, QD 208 - N° 3 - Coqueiro, Ananindeua - PA (CEP 67120-550). Atendemos de Segunda a Sexta das 08h às 19h e aos Sábados das 08h às 14h, com agendamento prévio para garantir total privacidade.
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==========================================
+         LOCALIZAÇÃO, CONTATO & FORMULÁRIO VIP
+         ========================================== -->
+    <section id="contato" class="py-28 md:py-36 bg-[#08080A] relative border-b border-[#E5C158]/20">
+        <div class="max-w-[1440px] mx-auto px-6 md:px-12 relative z-10">
+            
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+                
+                <!-- Coluna de Informações e Mapa -->
+                <div class="lg:col-span-5 space-y-8 reveal">
+                    <div>
+                        <div class="flex items-center gap-3 mb-4">
+                            <span class="w-8 h-[1px] bg-[#E5C158]"></span>
+                            <span class="text-[0.68rem] font-bold font-mono uppercase tracking-[0.25em] text-[#E5C158]">07 / Agendamento VIP</span>
+                        </div>
+                        <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tighter text-white leading-tight">
+                            Venha viver a experiência Kellen Santos.
+                        </h2>
+                    </div>
+
+                    <p class="text-stone-300 text-sm sm:text-base font-light leading-relaxed">
+                        Reserve seu horário exclusivo ou tire suas dúvidas diretamente com nossa equipe via WhatsApp ou preenchendo o formulário ao lado.
+                    </p>
+
+                    <!-- Detalhes de Endereço & Contato -->
+                    <div class="space-y-6 pt-4 border-t border-white/10">
+                        
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-2xl bg-[#E5C158]/10 border border-[#E5C158]/20 flex items-center justify-center text-[#E5C158] flex-shrink-0">
+                                <iconify-icon icon="solar:map-point-bold-duotone" class="text-2xl"></iconify-icon>
+                            </div>
+                            <div>
+                                <span class="text-[0.65rem] font-mono tracking-widest uppercase text-stone-500 block mb-1">ENDEREÇO</span>
+                                <p class="text-sm text-white font-medium">Loteamento Nova esperança Tv Fé em Deus, Av. Gov. Hélio Gueiros, QD 208 - N° 3</p>
+                                <p class="text-xs text-stone-400">Coqueiro, Ananindeua - PA, 67120-550</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-2xl bg-[#E5C158]/10 border border-[#E5C158]/20 flex items-center justify-center text-[#E5C158] flex-shrink-0">
+                                <iconify-icon icon="solar:phone-calling-bold-duotone" class="text-2xl"></iconify-icon>
+                            </div>
+                            <div>
+                                <span class="text-[0.65rem] font-mono tracking-widest uppercase text-stone-500 block mb-1">WHATSAPP & TELEFONE</span>
+                                <a href="https://wa.me/559181450800" target="_blank" class="text-base text-[#E5C158] font-bold hover:underline">
+                                    +55 91 8145-0800
+                                </a>
+                                <p class="text-xs text-stone-400">Atendimento ágil para agendamentos e orientações</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-2xl bg-[#E5C158]/10 border border-[#E5C158]/20 flex items-center justify-center text-[#E5C158] flex-shrink-0">
+                                <iconify-icon icon="solar:clock-circle-bold-duotone" class="text-2xl"></iconify-icon>
+                            </div>
+                            <div>
+                                <span class="text-[0.65rem] font-mono tracking-widest uppercase text-stone-500 block mb-1">HORÁRIOS DE ATENDIMENTO</span>
+                                <p class="text-sm text-white font-medium">Segunda a Sexta: 08:00 às 19:00</p>
+                                <p class="text-xs text-stone-400">Sábados: 08:00 às 14:00 (Com agendamento)</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Botões de Rotas GPS -->
+                    <div class="flex flex-wrap gap-4 pt-2">
+                        <a href="https://maps.google.com/?q=Av.+Gov.+Hélio+Gueiros,+QD+208+-+Coqueiro,+Ananindeua+-+PA,+67120-550" 
+                           target="_blank" 
+                           class="btn-gold-outline px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider flex items-center gap-2">
+                            <iconify-icon icon="solar:map-linear" class="text-base"></iconify-icon>
+                            <span>Abrir no Google Maps</span>
+                        </a>
+                        <a href="https://waze.com/ul?q=Av.+Gov.+Hélio+Gueiros,+QD+208+-+Coqueiro,+Ananindeua" 
+                           target="_blank" 
+                           class="btn-gold-outline px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider flex items-center gap-2">
+                            <iconify-icon icon="solar:routing-linear" class="text-base"></iconify-icon>
+                            <span>Traçar Rota no Waze</span>
+                        </a>
+                    </div>
+
+                </div>
+
+                <!-- Coluna de Formulário de Agendamento VIP (Design System V15 Inputs) -->
+                <div class="lg:col-span-7 reveal delay-200">
+                    <div class="p-8 sm:p-12 rounded-[2.5rem] bg-[#121216] border border-[#E5C158]/30 shadow-[0_25px_60px_rgba(0,0,0,0.8)] relative glow-hover">
+                        
+                        <div class="mb-8">
+                            <span class="glass-pill mb-3">
+                                <span class="pulsing-dot-gold"></span>
+                                <span>RESERVA PRIORITÁRIA</span>
+                            </span>
+                            <h3 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+                                Solicitar Horário de Consulta
+                            </h3>
+                            <p class="text-xs sm:text-sm text-stone-400 mt-2 font-light">
+                                Preencha os campos abaixo para receber o contato personalizado da nossa conciergerie biomédica.
+                            </p>
+                        </div>
+
+                        <form id="vip-booking-form" class="space-y-6">
+                            
+                            <!-- Nome -->
+                            <div class="relative">
+                                <label for="form-name" class="text-[0.65rem] font-bold font-mono tracking-widest uppercase text-stone-400 mb-2 block ml-1">
+                                    Seu Nome Completo *
+                                </label>
+                                <div class="relative">
+                                    <iconify-icon icon="solar:user-bold-duotone" class="absolute left-4 top-1/2 -translate-y-1/2 text-stone-500 text-xl"></iconify-icon>
+                                    <input type="text" id="form-name" required placeholder="Como prefere ser chamada(o)?" class="gold-input" />
+                                </div>
+                            </div>
+
+                            <!-- WhatsApp / Telefone -->
+                            <div class="relative">
+                                <label for="form-phone" class="text-[0.65rem] font-bold font-mono tracking-widest uppercase text-stone-400 mb-2 block ml-1">
+                                    WhatsApp / Telefone com DDD *
+                                </label>
+                                <div class="relative">
+                                    <iconify-icon icon="solar:phone-bold-duotone" class="absolute left-4 top-1/2 -translate-y-1/2 text-stone-500 text-xl"></iconify-icon>
+                                    <input type="tel" id="form-phone" required placeholder="(91) 98145-0800" class="gold-input" />
+                                </div>
+                            </div>
+
+                            <!-- Procedimento de Interesse & Período Preferido -->
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div class="relative">
+                                    <label for="form-procedure" class="text-[0.65rem] font-bold font-mono tracking-widest uppercase text-stone-400 mb-2 block ml-1">
+                                        Procedimento Desejado
+                                    </label>
+                                    <div class="relative">
+                                        <iconify-icon icon="solar:magic-stick-bold-duotone" class="absolute left-4 top-1/2 -translate-y-1/2 text-stone-500 text-xl"></iconify-icon>
+                                        <select id="form-procedure" class="gold-input appearance-none bg-[#121216] cursor-pointer">
+                                            <option value="Avaliação Geral">Avaliação Facial Global</option>
+                                            <option value="Harmonização Facial">Harmonização Facial & Preenchimento</option>
+                                            <option value="Bioestimuladores de Colágeno">Bioestimuladores de Colágeno</option>
+                                            <option value="Toxina Botulínica (Botox)">Toxina Botulínica (Botox)</option>
+                                            <option value="Depilação a Laser">Depilação a Laser Velvet Touch</option>
+                                            <option value="Limpeza de Pele Profunda">Limpeza de Pele & Hidroinfusão</option>
+                                            <option value="Lipo de Papada">Lipo Enzimática de Papada</option>
+                                            <option value="Outro Procedimento">Outro Procedimento</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="relative">
+                                    <label for="form-period" class="text-[0.65rem] font-bold font-mono tracking-widest uppercase text-stone-400 mb-2 block ml-1">
+                                        Melhor Período
+                                    </label>
+                                    <div class="relative">
+                                        <iconify-icon icon="solar:clock-circle-bold-duotone" class="absolute left-4 top-1/2 -translate-y-1/2 text-stone-500 text-xl"></iconify-icon>
+                                        <select id="form-period" class="gold-input appearance-none bg-[#121216] cursor-pointer">
+                                            <option value="Manhã (08h às 12h)">Manhã (08h às 12h)</option>
+                                            <option value="Tarde (13h às 17h)">Tarde (13h às 17h)</option>
+                                            <option value="Final da tarde / Noite">Final da tarde / Noite (17h às 19h)</option>
+                                            <option value="Sábado">Sábado</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Mensagem / Observações -->
+                            <div class="relative">
+                                <label for="form-notes" class="text-[0.65rem] font-bold font-mono tracking-widest uppercase text-stone-400 mb-2 block ml-1">
+                                    Conte-nos seus objetivos (Opcional)
+                                </label>
+                                <textarea id="form-notes" rows="3" placeholder="Ex: Gostaria de saber mais sobre valores e se há contraindicações para o meu caso..." class="w-full bg-white/[0.03] border border-white/10 rounded-2xl p-4 text-sm text-white placeholder-stone-500 outline-none focus:border-[#E5C158] focus:bg-[#E5C158]/[0.03] transition-all"></textarea>
+                            </div>
+
+                            <!-- Botão de Envio Shimmer -->
+                            <button type="submit" class="btn-gold-shimmer w-full py-4 rounded-2xl text-center text-sm font-bold uppercase tracking-wider flex items-center justify-center gap-3">
+                                <span>Enviar Solicitação via WhatsApp</span>
+                                <iconify-icon icon="solar:arrow-right-linear" class="text-xl"></iconify-icon>
+                            </button>
+
+                            <p class="text-center text-[0.68rem] text-stone-500 font-mono">
+                                🔒 Seus dados são protegidos com total sigilo médico e confidencialidade.
+                            </p>
+
+                        </form>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==========================================
+         FOOTER INSTITUCIONAL
+         ========================================== -->
+    <footer class="bg-[#050507] py-20 text-center relative border-t border-white/5 overflow-hidden">
+        <div class="max-w-[1440px] mx-auto px-6 md:px-12 relative z-10 flex flex-col items-center">
+            
+            <!-- Logo Grande no Rodapé -->
+            <a href="#" class="mb-8 block group">
+                <img src="assets/logo.png" alt="Logo Kellen Santos" class="h-16 md:h-20 w-auto object-contain mx-auto filter drop-shadow-[0_4px_16px_rgba(229,193,88,0.25)] group-hover:scale-105 transition-transform duration-300" />
+            </a>
+
+            <h3 class="text-xl sm:text-2xl font-bold tracking-tight text-white mb-2">
+                Kellen Santos Estética Avançada
+            </h3>
+            <p class="text-xs sm:text-sm font-mono text-stone-400 uppercase tracking-[0.25em] mb-8">
+                Harmonização Orofacial • Bioestimulação • Depilação Definitiva
+            </p>
+
+            <!-- Links Rápidos -->
+            <div class="flex flex-wrap justify-center gap-8 mb-12 text-xs font-mono tracking-widest uppercase text-stone-400">
+                <a href="#sobre" class="hover:text-[#E5C158] transition-colors">Sobre</a>
+                <a href="#procedimentos" class="hover:text-[#E5C158] transition-colors">Procedimentos</a>
+                <a href="#quiz" class="hover:text-[#E5C158] transition-colors">Protocolo Ideal</a>
+                <a href="#espaco" class="hover:text-[#E5C158] transition-colors">Espaço</a>
+                <a href="#depoimentos" class="hover:text-[#E5C158] transition-colors">Depoimentos</a>
+                <a href="#contato" class="hover:text-[#E5C158] transition-colors">Localização</a>
+            </div>
+
+            <!-- Redes Sociais e Contato Direto -->
+            <div class="flex items-center gap-6 mb-12">
+                <a href="https://wa.me/559181450800" target="_blank" rel="noopener noreferrer" class="w-12 h-12 rounded-full bg-white/5 border border-white/10 hover:border-[#E5C158] flex items-center justify-center text-white hover:text-[#E5C158] transition-all duration-300 hover:scale-110" aria-label="WhatsApp">
+                    <iconify-icon icon="solar:phone-calling-bold-duotone" class="text-2xl"></iconify-icon>
+                </a>
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="w-12 h-12 rounded-full bg-white/5 border border-white/10 hover:border-[#E5C158] flex items-center justify-center text-white hover:text-[#E5C158] transition-all duration-300 hover:scale-110" aria-label="Instagram">
+                    <iconify-icon icon="solar:camera-bold-duotone" class="text-2xl"></iconify-icon>
+                </a>
+                <a href="https://maps.google.com/?q=Av.+Gov.+Hélio+Gueiros,+QD+208+-+Coqueiro,+Ananindeua+-+PA,+67120-550" target="_blank" rel="noopener noreferrer" class="w-12 h-12 rounded-full bg-white/5 border border-white/10 hover:border-[#E5C158] flex items-center justify-center text-white hover:text-[#E5C158] transition-all duration-300 hover:scale-110" aria-label="Localização Maps">
+                    <iconify-icon icon="solar:map-point-bold-duotone" class="text-2xl"></iconify-icon>
+                </a>
+            </div>
+
+            <!-- Disclaimer Legal & Direitos -->
+            <div class="pt-8 border-t border-white/5 w-full max-w-3xl text-center space-y-3">
+                <p class="text-[0.68rem] text-stone-500 leading-relaxed font-light">
+                    As informações contidas neste site possuem caráter estritamente institucional e educativo. Procedimentos estéticos invasivos e injetáveis requerem consulta presencial prévia com profissional habilitado para diagnóstico e avaliação de eventuais contraindicações.
+                </p>
+                <p class="text-[0.68rem] text-stone-600 font-mono">
+                    © 2026 Kellen Santos Estética Avançada. Todos os direitos reservados. Ananindeua - PA.
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- ==========================================
+         BOTÃO FLUTUANTE WHATSAPP (MINIMALISTA)
+         ========================================== -->
+    <a href="https://wa.me/559181450800?text=Ol%C3%A1%2C+equipe+Kellen+Santos!+Gostaria+de+atendimento+exclusivo." 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       class="whatsapp-floating" 
+       aria-label="Falar no WhatsApp com Kellen Santos">
+        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 2.5C8.544 2.5 2.5 8.544 2.5 16c0 2.65.753 5.125 2.056 7.228L2.5 29.5l6.478-2.016A13.435 13.435 0 0016 29.5c7.456 0 13.5-6.044 13.5-13.5S23.456 2.5 16 2.5zm0 24.688c-2.316 0-4.48-.684-6.302-1.859l-.452-.292-4.148 1.29 1.326-4.04-.306-.47A11.127 11.127 0 014.813 16c0-6.178 5.01-11.188 11.187-11.188S27.188 9.822 27.188 16c0 6.178-5.01 11.188-11.188 11.188zm6.13-8.38c-.336-.168-1.986-.98-2.294-1.092-.308-.112-.532-.168-.756.168-.224.336-.868 1.092-1.064 1.316-.196.224-.392.252-.728.084-.336-.168-1.42-.524-2.704-1.67-.999-.89-1.674-1.99-1.87-2.326-.196-.336-.02-.518.148-.686.152-.152.336-.392.504-.588.168-.196.224-.336.336-.56.112-.224.056-.42-.028-.588-.084-.168-.756-1.82-1.036-2.492-.272-.654-.548-.565-.756-.576l-.644-.012c-.224 0-.588.084-.896.42-.308.336-1.176 1.15-1.176 2.8 0 1.652 1.204 3.248 1.372 3.472.168.224 2.37 3.62 5.74 5.076.802.346 1.428.554 1.916.71.806.256 1.54.22 2.12.133.647-.097 1.986-.812 2.266-1.596.28-.784.28-1.456.196-1.596-.084-.14-.308-.224-.644-.392z"/>
+        </svg>
+    </a>
+
+    <!-- Scripts de Interatividade -->
+    <script src="js/main.js"></script>
+
+</body>
+</html>
+
